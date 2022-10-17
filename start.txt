@@ -1,10 +1,10 @@
 http://stackoverflow.com/questions/2862590/how-to-replace-master-branch-in-git-entirely-from-another-branch
 
 You should be able to use the "ours" merge strategy to overwrite master with AnotherBranch like this:
-
+####
 git checkout AnotherBranch
 git merge -s ours master
 git checkout master
 git merge AnotherBranch
 The result should be your master is now essentially AnotherBranch.
-
+###########
